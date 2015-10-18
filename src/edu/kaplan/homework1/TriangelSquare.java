@@ -12,33 +12,30 @@ public class TriangelSquare {
         float length = 0;
         float halfp = 0;
         float square = 0;
-        //-----------------------------------------------------
-        side1 = sidel(x1,y1,x2,y2);
-        side2 = sidel(x2,y2,x3,y3);
-        side3 = sidel(x1,y1,x3,y3);
+        //-----Calculating the lengths of the sides----
+        side1 = sideLength(x1, y1, x2, y2);
+        side2 = sideLength(x2, y2, x3, y3);
+        side3 = sideLength(x1, y1, x3, y3);
         //-----------------------------------------------------
 
         System.out.println("Length of side 1 is " + side1);
         System.out.println("Length of side 2 is " + side2);
         System.out.println("Length of side 3 is " + side3);
 
-        //------------------------------------------------------
+        //------Calculating perimeter------------------
         length = (float)(side1 + side2 + side3);
-        //------------------------------------------------------
+        //------Calculating square---------------------
         halfp = length/2;
         square = (float)(Math.sqrt(halfp*(halfp - side1)*(halfp - side2)*(halfp - side3)));
 
-        /*your code here*/
         System.out.println("Length of all sides is " + length);
         System.out.println("Square is " + square);
     }
-    public static double sidel (int a1, int b1,int a2,int b2){
+   //--- Method for calculating the length of the side------
+    public static double sideLength (int a1, int b1,int a2,int b2){
         double sidelenghth = 0;
-        double temp1, temp2, temp3;
-        temp1 = (a1 - a2)*(a1 - a2);
-        temp2 = (b1 - b2)*(b1 - b2);
-        temp3 = temp1 + temp2;
-        sidelenghth = Math.sqrt(temp3);
+
+        sidelenghth = Math.sqrt((a1 - a2)*(a1 - a2) +(b1 - b2)*(b1 - b2));
 
         return sidelenghth;
     }

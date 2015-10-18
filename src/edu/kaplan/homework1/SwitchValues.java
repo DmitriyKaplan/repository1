@@ -7,9 +7,9 @@ public class SwitchValues {
     public static void main(String[] args) {
         int first = 5;
         int second = 10;
-        first = first + second;// Сумма обоих перем в фест
-        second = first - second;//Секонд меняет свое значение на то, что было в фест
-        first = first - second;//Из суммы вычитаем новый секонд и фест меняет свое значение на старый секонд
+        first = first + second;
+        second = first - second;
+        first = first - second;
  /*int temp = first;
         first = second;
         second = temp;*/
