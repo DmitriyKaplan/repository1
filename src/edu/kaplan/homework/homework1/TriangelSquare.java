@@ -1,4 +1,4 @@
-package edu.kaplan.homework1;
+package edu.kaplan.homework.homework1;
 
 /**
  * Created by ִלטענטי on 16.10.2015.
