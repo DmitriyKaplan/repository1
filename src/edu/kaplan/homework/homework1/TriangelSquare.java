@@ -17,14 +17,15 @@ public class TriangelSquare {
         float length = (float)(side1 + side2 + side3);
         //Calculating square
         float halfPerimeter = length/2;
-        float square = (float)(Math.sqrt(halfPerimeter*(halfPerimeter - side1)*(halfPerimeter - side2)*(halfPerimeter - side3)));
+        float square = (float)(Math.sqrt(halfPerimeter * (halfPerimeter - side1) *
+                (halfPerimeter - side2) * (halfPerimeter - side3)));
         System.out.println("Length of all sides is " + length);
         System.out.println("Square is " + square);
     }
    //Method for calculating the length of the side
     public static double calculateSideLength (int a1, int b1,int a2,int b2){
-        double sidelenghth = 0;
-        sidelenghth = Math.sqrt((a1 - a2)*(a1 - a2) +(b1 - b2)*(b1 - b2));
-        return sidelenghth;
+        //double sidelenghth
+        return Math.sqrt((a1 - a2) * (a1 - a2) + (b1 - b2) * (b1 - b2));
+      //  return sidelenghth;
     }
 }

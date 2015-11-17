@@ -8,10 +8,10 @@ public class ClockAngle {
         int x = 12;
         int y = 45;
 //validation
-        if ((x>12)|(x<0)) {
+        if ((x > 12)|(x < 0)) {
             hours = false;
         }
-        if ((y>59)|(y<0)) {
+        if ((y > 59)|(y < 0)) {
             mins = false;
         }
         boolean valid = hours&mins;
